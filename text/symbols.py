@@ -14,3 +14,9 @@ symbols = [_pad] + list(_punctuation) + list(_letters) + list(_letters_ipa)
 
 # Special symbol ids
 SPACE_ID = symbols.index(" ")
+
+
+# romans
+vocab_file = "/home/solee0022/tts-asr/eng/vocab.txt"
+romans = [x.replace("\n", "") for x in open(vocab_file, encoding="utf-8").readlines()]
+SPACE_ID = romans.index(" ")
