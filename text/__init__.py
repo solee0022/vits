@@ -1,6 +1,6 @@
 """ from https://github.com/keithito/tacotron """
 from text import cleaners
-from text.symbols import symbols
+from text.symbols import symbols, romans
 
 # I want to change this.
 
